@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-family: 'Inter', Arial, sans-serif;
+    scroll-behavior: smooth
+}
+
+body {
+    background: #f6f7fb;
+    color: #111;
+    line-height: 1.6
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(15, 15, 15, 0.08);
+}
+
+/* Header */
+.header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.title-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: url('https://scontent.fidr4-1.fna.fbcdn.net/v/t39.30808-1/459337720_1303104714517091_2841079786125894817_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=1&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=4wh_E3kwRE0Q7kNvwGPyvue&_nc_oc=AdkjDrDIDP3eFTI3UCS4vBqpulUPXL43vauCzJe5E4raKP01XKZ0qIBa3GQB-pQgtMnPikGAoF5InOKstrbtPJv-&_nc_zt=24&_nc_ht=scontent.fidr4-1.fna&_nc_gid=-brMI3vZaAraRzQ9ngoedw&oh=00_AfdaVXjt7UhXKsmbMI05kaMT3d2uGnFNNDQfjM9fj02PTA&oe=68F6F91E');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.12);
+    flex-shrink: 0;
+}
+
+.header h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0b1220;
+}
+
+.header p {
+    color: #556;
+    margin-top: 6px;
+    font-size: 0.95rem;
+}
+
+/* Main / hero title */
+main h2 {
+    font-size: 2rem;
+    color: #0b67a3;
+    /* accent color */
+    margin: 1rem 0;
+}
+
+main p {
+    max-width: 900px;
+    margin: 0.6rem 0 1rem 0;
+    color: #222;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Section & list */
+section h3 {
+    margin: 1.6rem 0 0.6rem 0;
+    font-size: 1.2rem;
+    color: #0b1220;
+}
+
+section ul {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    list-style: disc;
+    color: #222;
+}
+
+section ul li {
+    margin-bottom: 0.6rem;
+}
+
+/* Read more button */
+.read-more-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    background: #0077b6;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.read-more-btn:hover {
+    opacity: 0.95;
+    transform: translateY(-2px);
+    transition: all .18s ease
+}
+
+/* Footer suggestion */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #667;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width:768px) {
+    .header {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .title-image {
+        width: 120px;
+        height: 120px
+    }
+
+    main h2 {
+        font-size: 1.5rem
+    }
+
+    main p,
+    section ul {
+        font-size: 0.95rem
+    }
+}
